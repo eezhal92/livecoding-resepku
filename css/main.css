@@ -1,0 +1,377 @@
+/**
+ * Color Pallette
+ * Red    : #c96060;
+ * Black  : #222;
+ * Black2 : #444;
+ * Gray   : #e3e3e3;
+ * Gray2  : #ebebeb;
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+body {
+  font-family: 'Open Sans', Tahoma, Arial, Verdana;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/**
+ * Utils classes
+ */
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 970px;
+}
+
+.header {
+  border-top: 5px solid #c96060;
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px 0;
+}
+
+.logo {
+  float: left;
+  display: inline-block;
+}
+
+.logo__link {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: #222;
+}
+
+.navigation {
+  display: inline-block;
+  float: right;
+}
+
+.navigation > ul > li {
+  display: inline-block;
+}
+
+.navigation > ul > li > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #222;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.navigation > ul > li > a {
+  padding: 0 10px;
+  border-right: 1px solid #222;
+}
+
+.navigation > ul > li:last-child > a {
+  border-right: 0;
+}
+
+.featured-recipe {
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.sub-title {
+  color: #c96060;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.italic {
+  font-family: Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: lighter;
+  letter-spacing: 0px;
+  line-height: 26px;
+  font-size: 17px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #fff;
+  color: #c96060;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: 2px solid #fff;
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover, .btn:active {
+  background: #c96060;
+  color: #fff;
+  border: 2px solid #c96060;
+  text-decoration: none;
+}
+
+.btn--outline {
+  border: 2px solid #c96060;
+  background: transparent;
+}
+
+.btn--red {
+  border: 2px solid #c96060;
+  background: #c96060;
+  color: #fff;
+}
+
+.bg-bread {
+  padding: 80px 0;
+  background-image: url(/images/img-roti.png);
+  background-repeat: no-repeat;
+  background-position: 130% center;
+}
+
+#category {
+  padding: 45px 0;
+}
+
+#recipes {
+  padding: 80px 0;
+  background-color: #ebebeb;
+}
+
+#tips {
+  padding: 160px 0;
+  background-image: url(/images/img-tips.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+#tips::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 1;
+}
+
+.tip {
+  position: relative;
+  z-index: 2;
+}
+
+.tip > h2 {
+  font-weight: 800;
+  font-size: 42px;
+}
+
+.categories > ul {
+  display: table;
+  padding: 0;
+  width: 100%;
+}
+
+.categories > ul > li {
+  display: table-cell;
+  text-align: center;
+}
+
+.category {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 2px;
+  background-image: url(/images/ico-nav.png);
+  opacity: 0.4;
+}
+
+.category--active {
+  opacity: 1;
+}
+
+.category--cake {
+  background-position: 0 0;
+}
+
+.category--hamburger {
+  background-position: 0 -65px;
+}
+
+.category--fish {
+  background-position: 0 -130px;
+}
+
+.category--coffee {
+  background-position: 0 -202px;
+}
+
+.category--ice-cream {
+  background-position: 0 -271px;
+}
+
+.category--meat {
+  background-position: 0 -339px;
+}
+
+.category--coffee-bean {
+  background-position: 0 -408px;
+}
+
+.center {
+  text-align: center;
+}
+
+.recipe-card {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.recipe-card__image > img {
+  width: 100%;
+}
+
+.recipe-card__detail {
+  padding: 20px 40px;
+}
+
+.recipe-card__detail > h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.recipe-card__action {
+  border-top: 1px solid #eaeaea;
+  display: table;
+  width: 100%;
+}
+
+.recipe-card__action > .action__like, .recipe-card__action > .action__read {
+  padding: 20px 10px;
+  display: table-cell;
+  text-align: center;
+}
+
+.recipe-card__action > .action__like {
+  width: 80px;
+  border-right: 1px solid #eaeaea;
+}
+
+.recipe-card__action > .action__like > a {
+  color: #c96060;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recipe-card__action > .action__read > a {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 80px 0;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.footer-form {
+  padding-bottom: 28px;
+  border-bottom: 2px solid #c96060;
+}
+
+.footer-form .footer-form__title {
+  margin: 12px 0;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.footer-form  .form-group input {
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #ebebeb;
+  border: 0;
+  height: 50px;
+}
+
+.footer-form  .form-group .btn {
+  height: 50px;
+}
+
+.footer-form .form-group input::placeholder {
+  color: #999999;;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.copy, .address, .social {
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: #444;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.copy {
+  text-align: left;
+  border-right: 1px dashed #444;
+}
+
+.address {
+  text-align: center;
+}
+
+.social {
+  border-left: 1px dashed #444;
+  text-align: right;
+}
+
+.social ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social ul li {
+  display: inline-block;
+}
+
+.social ul li a {
+  color: #444;
+  text-decoration: underline;
+}
+
+.social ul li a {
+  border-right: 1px solid  #444;
+  padding: 0 10px;
+}
+
+.social ul li:last-child a {
+  border-right: 0;
+  padding-right: 0;
+}
